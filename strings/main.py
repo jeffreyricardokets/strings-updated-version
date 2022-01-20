@@ -24,9 +24,9 @@ first_name = player[:first_space_loc]
 
 
 #last name
-last_name_loc = player.find(" ")
+last_name_loc = player.find(" ") + 1
 stringlenght = len(player)
-last_name = player[last_name_loc +1: stringlenght]
+last_name = player[last_name_loc : stringlenght]
 
 #short version of name
 name_short = first_name[0] + ". " + last_name
